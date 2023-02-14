@@ -2,7 +2,7 @@ from gtts import gTTS
 import os
 
 # specify the file path and name
-file_path = "txt file path"
+file_path = "texto.txt"
 
 # open the file in read mode
 with open(file_path, "r", encoding="utf-8") as file:
@@ -11,6 +11,6 @@ with open(file_path, "r", encoding="utf-8") as file:
     # convert the text to speech
     tts = gTTS(file_contents, lang='pt-br')
     # save the speech to a file
-    tts.save("mp3 file name")
+    tts.save("AudioConvertido.mp3")
     # play the speech
-    os.system("mpg321 mp3 file name")
+    os.system("AudioConvertido.mp3")
