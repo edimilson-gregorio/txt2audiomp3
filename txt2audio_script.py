@@ -2,7 +2,7 @@ from gtts import gTTS
 import os
 
 # specify the file path and name
-file_path = "..\texto.txt"
+file_path = "texto.txt"
 
 # open the file in read mode
 with open(file_path, "r", encoding="utf-8") as file:
