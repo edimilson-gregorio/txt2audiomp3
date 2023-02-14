@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import filedialog
+import subprocess
 
 def save_text():
     text = text_area.get("1.0", "end")
@@ -9,7 +10,7 @@ def save_text():
 
 def run_script():
     message_label.config(text="Convertendo o texto salvo... Aguarde...")
-    # run the script here
+    subprocess.call(["python", "txt2audio_script.py"])
     message_label.config(text="Seu arquivo foi convertido com sucesso")
 
 
